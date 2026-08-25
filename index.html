@@ -1,37 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Tasks Collection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Class Tasks</div>
+        <nav>
+          <a href="#task3">Task 3</a>
+          <a href="#task4">Task 4</a>
+          <a href="#task5">Task 5</a>
+          <a href="#task6">Task 6</a>
+          <a href="#task7">Task 7</a>
+          <a href="#task8">Task 8</a>
+          <a href="#task9">Task 9</a>
+        </nav>
+      </div>
+    </header>
 
-    <div class="player">
+    <main class="container">
+      <section id="task3" class="task-card">
+        <h2>Class Task 3 - Git Collaborations</h2>
+        <p>
+          Git collaboration helps teams work together by sharing code, creating
+          branches, reviewing changes, and merging approved updates safely.
+        </p>
+        <ul class="check-list">
+          <li>Clone the repository</li>
+          <li>Create a feature branch</li>
+          <li>Commit meaningful changes</li>
+          <li>Push to remote</li>
+          <li>Create pull request and review</li>
+          <li>Merge after approval</li>
+        </ul>
+      </section>
 
-        <img src="images/song.jpg" class="cover" alt="Little Ganesha">
+      <section id="task4" class="task-card">
+        <h2>Class Task 4 - HTML Basic Tags</h2>
+        <h3>Heading Example</h3>
+        <p>This is a paragraph tag.</p>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
 
-        <h1>🎵 My Music Player</h1>
-
-        <h3>Little Ganesha</h3>
-
-        <p>Devotional Music</p>
-
-        <div class="controls">
-            <button id="prev">⏮</button>
-            <button id="play">▶</button>
-            <button id="next">⏭</button>
+        <div class="html-demo">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+            alt="Teamwork illustration"
+          />
+          <ul>
+            <li>HTML list item</li>
+            <li>Unordered list</li>
+            <li>Basic structure</li>
+          </ul>
+          <ol>
+            <li>Open browser</li>
+            <li>Write HTML</li>
+            <li>Run page</li>
+          </ol>
         </div>
+      </section>
 
-        <audio id="audio">
-            <source src="songs/ganesha.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+      <section id="task5" class="task-card">
+        <h2>Class Task 5 - CSS implementation with Class</h2>
+        <div class="css-demo-grid">
+          <div class="css-box internal-demo">
+            <h3>Internal CSS</h3>
+            <p>Styled using a &lt;style&gt; block.</p>
+          </div>
 
+          <div class="css-box inline-demo" style="background: linear-gradient(135deg, #6a5af9, #8b5cf6); color: white; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+            <h3>Inline CSS</h3>
+            <p>Direct style attribute is used here.</p>
+          </div>
+
+          <div class="css-box external-demo">
+            <h3>External CSS</h3>
+            <p>Styles are placed in an external stylesheet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="task6" class="task-card">
+        <h2>Class Task 6 - Calculator App</h2>
+        <div class="calculator">
+          <input id="display" type="text" readonly />
+          <div class="calc-buttons">
+            <button class="calc-btn clear" data-value="C">C</button>
+            <button class="calc-btn" data-value="/">/</button>
+            <button class="calc-btn" data-value="*">×</button>
+            <button class="calc-btn" data-value="7">7</button>
+            <button class="calc-btn" data-value="8">8</button>
+            <button class="calc-btn" data-value="9">9</button>
+            <button class="calc-btn" data-value="-">-</button>
+            <button class="calc-btn" data-value="4">4</button>
+            <button class="calc-btn" data-value="5">5</button>
+            <button class="calc-btn" data-value="6">6</button>
+            <button class="calc-btn" data-value="+">+</button>
+            <button class="calc-btn" data-value="1">1</button>
+            <button class="calc-btn" data-value="2">2</button>
+            <button class="calc-btn" data-value="3">3</button>
+            <button class="calc-btn equal" data-value="=">=</button>
+            <button class="calc-btn zero" data-value="0">0</button>
+            <button class="calc-btn" data-value=".">.</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="task7" class="task-card">
+        <h2>Class Task 7 - Age Restricted Form (Direct Age)</h2>
+        <form id="directAgeForm" class="age-form">
+          <label for="ageInput">Enter your age</label>
+          <input id="ageInput" type="number" min="1" max="120" placeholder="For example: 18" required />
+          <button type="submit">Check Age</button>
+          <p id="ageResult" class="result"></p>
+        </form>
+      </section>
+
+      <section id="task8" class="task-card">
+        <h2>Class Task 8 - Age Restricted Form (DOB)</h2>
+        <form id="dobForm" class="age-form">
+          <label for="dobInput">Select your date of birth</label>
+          <input id="dobInput" type="date" required />
+          <button type="submit">Calculate Age</button>
+          <p id="dobResult" class="result"></p>
+        </form>
+      </section>
+
+      <section id="task9" class="task-card login-wrapper">
+        <h2>Class Task 9 - Login Page with Register Popup</h2>
+
+        <div class="login-panel">
+          <h3>Login</h3>
+          <form id="loginForm">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+          <p class="register-link">
+            New here?
+            <button type="button" id="openRegister">Create an account</button>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal hidden" id="registerModal" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <button class="close-btn" id="closeRegister" type="button">×</button>
+        <h3>Register</h3>
+        <form id="registerForm">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
