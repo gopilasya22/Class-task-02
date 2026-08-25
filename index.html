@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Little Ganesha | Music Player</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="player-card">
-      <img
-        class="cover-art"
-        src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=900&q=80"
-        alt="Ganesha illustration"
-      />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <p class="tag">Devotional Music</p>
-      <h1>Little Ganesha</h1>
-      <p class="artist">Bhakti Collection</p>
+    <div class="player">
 
-      <div class="progress-box">
-        <div class="time-row">
-          <span id="currentTime">0:00</span>
-          <span id="duration">0:00</span>
+        <img src="images/song.jpg" class="cover" alt="Little Ganesha">
+
+        <h1>🎵 My Music Player</h1>
+
+        <h3>Little Ganesha</h3>
+
+        <p>Devotional Music</p>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
         </div>
-        <input id="progressBar" type="range" min="0" max="100" value="0" />
-      </div>
 
-      <div class="controls">
-        <button id="prev" aria-label="Previous track">⏮</button>
-        <button id="play" class="play-btn" aria-label="Play or pause">▶</button>
-        <button id="next" aria-label="Next track">⏭</button>
-      </div>
+        <audio id="audio">
+            <source src="songs/ganesha.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-      <audio id="audio" preload="metadata">
-        <source
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
-          type="audio/mpeg"
-        />
-        Your browser does not support the audio element.
-      </audio>
-    </main>
+    </div>
 
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
